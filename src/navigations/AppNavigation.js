@@ -12,6 +12,9 @@ import HomeScreen from "../screens/HomeScreen";
 import LoginScreen from "../screens/LoginScreen";
 import SignupScreen from "../screens/SignupScreen";
 import WelcomeScreen from "../screens/WelcomeScreen";
+import AddListScreen from "../screens/AddListScreen";
+import ListViewScreen from "../screens/ListViewScreen"; 
+import MapScreen from "../screens/MapScreen";
 import { AppIcon, AppStyles } from "../AppStyles";
 import { Configuration } from "../Configuration";
 import DrawerContainer from "../components/DrawerContainer";
@@ -33,7 +36,10 @@ const LoginStack = createStackNavigator(
   {
     Login: { screen: LoginScreen },
     Signup: { screen: SignupScreen },
-    Welcome: { screen: WelcomeScreen }
+    Welcome: { screen: WelcomeScreen },
+    AddList: {screen: AddListScreen},
+    ListView: {screen: ListViewScreen},
+    Map: {screen: MapScreen}
   },
   {
     initialRouteName: "Welcome",
